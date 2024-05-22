@@ -1,3 +1,4 @@
+# ДЗ 1
 # Задача 1
 # Вариант 1
 
@@ -48,3 +49,12 @@
 #     print(True)
 # else:
 #     print(False)
+
+# Задача 4
+
+# Задача 5
+# data = input('Введите данные: \n')
+# if data.count('.') <= 1 and data.isdigit == True and '.' not in data[-1]:
+#     print(f'{float(data)} -> {True}')
+# else:
+#     print(f'{data} -> {False}')
