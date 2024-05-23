@@ -52,7 +52,62 @@
 
 # Задача 4
 
-
+# ar_num = int(input())
+# if ar_num < 4000:
+#     thousands = ar_num // 1000
+#     houndreds = ar_num // 100 % 10
+#     tens = ar_num // 10 % 10
+#     units = ar_num % 10
+#     if ar_num < 4000:
+#         if thousands < 4:
+#             rome_thousands = 'M' * thousands
+#         elif thousands == 0:
+#             rome_thousands = ''
+#         else:
+#             print('В римской нумерации нет чисел больше 3999!')
+#         if houndreds != 0:
+#             if houndreds < 4:
+#                 rome_houndreds = 'C' * houndreds
+#             elif houndreds == 4:
+#                 rome_houndreds = 'CD'
+#             elif houndreds == 5:
+#                 rome_houndreds = 'D'
+#             elif houndreds > 5 and houndreds < 9:
+#                 rome_houndreds = 'D' + ('C' * (houndreds - 5))
+#             elif houndreds == 9:
+#                 rome_houndreds = 'CM'
+#         else:
+#             rome_houndreds = ''
+#         if tens != 0:
+#             if tens < 4:
+#                 rome_tens = 'X' * tens
+#             elif tens == 4:
+#                 rome_tens = 'XL'
+#             elif tens == 5:
+#                 rome_tens = 'L'
+#             elif tens > 5 and tens < 9:
+#                 rome_tens = 'L' + ('X' * (tens - 5))
+#             elif tens == 9:
+#                 rome_tens = 'XC'
+#         else:
+#             rome_tens = ''
+#         if units != 0:
+#             if units < 4:
+#                 rome_units = 'I' * units
+#             elif units == 4:
+#                 rome_units = 'IV'
+#             elif units == 5: 
+#                 rome_units = 'V'
+#             elif units > 5 and units < 9:
+#                 rome_units = 'V' + ('I' * (units - 5))
+#             elif units == 9:
+#                 rome_units = 'IX'
+#         else:
+#             rome_units = ''
+#     rome_number = rome_thousands + rome_houndreds + rome_tens + rome_units
+#     print(rome_number)
+# else:
+#     print('В римской нумерации нет чисел больше 3999!')
 
 # Задача 5
 # data = input('Введите данные: \n')
