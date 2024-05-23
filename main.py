@@ -115,3 +115,17 @@
 #     print(f'{float(data)} -> {True}')
 # else:
 #     print(f'{data} -> {False}')
+
+
+# ДЗ 2
+# Задача 1
+# number = int(input())
+# new_number = 0
+# new_new_number = 0
+# for i in range(len(str(number))):
+#     figure = number // (10 ** i) % 10
+#     new_number += figure
+# for i in range(len(str(new_number))):
+#     figure = new_number // (10 ** i) % 10
+#     new_new_number += figure
+# print(new_new_number)
