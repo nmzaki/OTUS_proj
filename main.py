@@ -52,6 +52,8 @@
 
 # Задача 4
 
+
+
 # Задача 5
 # data = input('Введите данные: \n')
 # if data.count('.') <= 1 and data.isdigit == True and '.' not in data[-1]:
