@@ -129,3 +129,39 @@
 #     figure = new_number // (10 ** i) % 10
 #     new_new_number += figure
 # print(new_new_number)
+
+
+# Задача 4
+# non_encrypted_line, key = str(input()), int(input())
+# encrypted_line = str()
+# alphabet_list_lower = ['', 'a', 'b', 'c', 'd', 'e',
+#                     'f', 'g', 'h', 'i', 'j',
+#                     'k', 'l', 'm', 'n', 'o',
+#                     'p', 'q', 'r', 's', 't', 
+#                     'u', 'v', 'w', 'x', 'y', 'z']
+# alphabet_list_upper = ['', 'A', 'B', 'C', 'D', 'E',
+#                     'F', 'G', 'H', 'I', 'J',
+#                     'K', 'L', 'M', 'N', 'O',
+#                     'P', 'Q', 'R', 'S', 'T', 
+#                     'U', 'V', 'W', 'X', 'Y', 'Z']
+# for i in non_encrypted_line:
+#     if i == ' ':
+#         encrypted_line += ' '
+#         continue
+#     if i in alphabet_list_lower:
+#         nel_index = alphabet_list_lower.index(i)                              #nel_index - non_encrypted_line_index
+#         if nel_index + key > 26:
+#             encrypted_letter = alphabet_list_lower[nel_index + key - 26]
+#             encrypted_line += encrypted_letter
+#         else:    
+#             encrypted_letter = alphabet_list_lower[nel_index + key]
+#             encrypted_line += encrypted_letter
+#     else:
+#         nel_index = alphabet_list_upper.index(i)                              #nel_index - non_encrypted_line_index
+#         if nel_index + key > 26:
+#             encrypted_letter = alphabet_list_upper[nel_index + key - 26]
+#             encrypted_line += encrypted_letter
+#         else:    
+#             encrypted_letter = alphabet_list_upper[nel_index + key]
+#             encrypted_line += encrypted_letter
+# print(encrypted_line)
