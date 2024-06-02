@@ -131,7 +131,40 @@
 # print(new_new_number)
 
 
+# Задача 2
+
+# bucked_seats = [[0,1,1,0], [1, 0, 0, 0], [0,1,0,0]]
+# quantity = int(input())
+# for i in range(len(bucked_seats)):
+#     # print(bucked_seats[i])
+#     for j in range(len(bucked_seats[i])):
+#         # print(bucked_seats[i][j])
+#         bucked_seats[i][j] = str(bucked_seats[i][j])
+#     bucked_seats[i] = ''.join(bucked_seats[i])
+# print(bucked_seats)
+# for i, row in enumerate(bucked_seats):
+#     if '0' * quantity in row:
+#         print(i)
+#         break
+
+# Задача 3
+
+# non_rle_str = str(input())
+# rle_str = ''
+# counter = 1
+# for i in range(len(non_rle_str) - 1):
+#     if non_rle_str[i] == non_rle_str[i + 1]:
+#         counter += 1
+#     else:
+#         rle_str += f'{counter}{non_rle_str[i]}'
+#         counter = 1
+# rle_str += f'{counter}{non_rle_str[-1]}'
+# print(rle_str)
+
+
+
 # Задача 4
+
 # non_encrypted_line, key = str(input()), int(input())
 # encrypted_line = str()
 # alphabet_list_lower = ['', 'a', 'b', 'c', 'd', 'e',
@@ -165,3 +198,50 @@
 #             encrypted_letter = alphabet_list_upper[nel_index + key]
 #             encrypted_line += encrypted_letter
 # print(encrypted_line)
+
+
+# Задача 5
+
+# # input_str = str()
+# # subject = list(input_str.split()[0])
+# # # input_str != ''
+# # i = 1
+# # print(subject, surname, rating)
+# report_card = dict()
+# while input_str := input():
+#     subject = input_str.split()[0]
+#     surname = input_str.split()[1]
+#     rating = input_str.split()[2]
+#     if subject in report_card:
+#         if surname in report_card[subject]:
+#             report_card[subject][surname].append[rating]
+#         else:
+#             report_card[subject][surname] = [rating]
+#     else:
+#         report_card[subject] = {surname: [rating]}
+# for subject in report_card.items():
+#     print(subject)
+#     for surname, rating in student.items():
+#         print(surname, rating)
+#     # report_card[i] = subject, surname, rating
+#     # i += 1
+# # print(report_card)
+
+
+# dict_data = {}
+# while data := input().split():
+#     subj, name, mark = data
+#     if subj in dict_data:
+#         if name in dict_data[subj]:
+#             dict_data[subj][name].append(mark)
+#         else:
+#             dict_data[subj][name] = [mark]
+#     else:
+#         dict_data[subj] = {name: [mark]}
+#     print(data)
+# for subj, student in dict_data.items():
+#     print(subj)
+#     for name, marks in student.items():
+#         print(name, marks)
+#
+# print(dict_data)
