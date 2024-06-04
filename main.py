@@ -245,3 +245,22 @@
 #         print(name, marks)
 #
 # print(dict_data)
+
+
+# ДЗ 3
+# Задача 1
+
+# def text_converter():
+#     text = str(input())
+#     snake_case = ''
+#     if text.count('_') > 0:
+#         text = text.title().replace('_', '')
+#         print(text)
+#     else:
+#         for i in text:
+#             if i.isupper() == True:
+#                 snake_case += '_'
+#             snake_case += i.lower()
+#     print(snake_case.replace('_', '',1))
+
+# text_converter()
