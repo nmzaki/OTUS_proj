@@ -1,6 +1,6 @@
-# ДЗ 1
-# Задача 1
-# Вариант 1
+##### ДЗ 1 #####
+##### Задача 1 #####
+##### Вариант 1 #####
 
 # figure = int(input('Введите пятизначное число \n'))
 # if len(str(figure)) > 5:
@@ -14,7 +14,7 @@
 # sub_fig5 = figure % 10
 # print(int(sub_fig1 + (sub_fig4 * 100) + sub_fig3 + (sub_fig2 / 100) + sub_fig5))
 
-# Вариант 2
+##### Вариант 2 #####
 
 # figure = str(input('Введите пятизначное число \n'))
 # if len(str(figure)) > 5:
@@ -26,7 +26,7 @@
 
 
 
-# Задача 2
+##### Задача 2 #####
 
 # work_days = int(input('Введите количество дней до ближайшего отпуска \n'))
 # weeks = work_days // 7
@@ -39,7 +39,8 @@
 # else:
 #     print((weeks * 2) + (work_days - (weeks * 7) - 5))
 
-# Задача 3
+##### Задача 3 #####
+
 # length, width, size = (
 #     int(input("Введите длинну: ")),
 #     int(input("Введите ширину: ")),
@@ -50,7 +51,7 @@
 # else:
 #     print(False)
 
-# Задача 4
+##### Задача 4 #####
 
 # ar_num = int(input())
 # if ar_num < 4000:
@@ -117,8 +118,9 @@
 #     print(f'{data} -> {False}')
 
 
-# ДЗ 2
-# Задача 1
+##### ДЗ 2 #####
+##### Задача 1 #####
+
 # number = int(input())
 # new_number = 0
 # new_new_number = 0
@@ -131,7 +133,7 @@
 # print(new_new_number)
 
 
-# Задача 2
+##### Задача 2 #####
 
 # bucked_seats = [[0,1,1,0], [1, 0, 0, 0], [0,1,0,0]]
 # quantity = int(input())
@@ -147,7 +149,7 @@
 #         print(i)
 #         break
 
-# Задача 3
+##### Задача 3 #####
 
 # non_rle_str = str(input())
 # rle_str = ''
@@ -163,7 +165,7 @@
 
 
 
-# Задача 4
+##### Задача 4 #####
 
 # non_encrypted_line, key = str(input()), int(input())
 # encrypted_line = str()
@@ -200,7 +202,7 @@
 # print(encrypted_line)
 
 
-# Задача 5
+##### Задача 5 #####
 
 # # input_str = str()
 # # subject = list(input_str.split()[0])
@@ -247,8 +249,8 @@
 # print(dict_data)
 
 
-# ДЗ 3
-# Задача 1
+##### ДЗ 3 #####
+##### Задача 1 #####
 
 # def text_converter():
 #     text = str(input())
@@ -264,3 +266,42 @@
 #     print(snake_case.replace('_', '',1))
 
 # text_converter()
+
+
+##### Задача 2 #####
+
+
+# def is_leap(year: int) -> bool:
+#     return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+
+# def date_check(date: str) -> bool:
+#     if len(list_date := date.split(".")) != 3:
+#         return False
+#     day, month, year = map(int, list_date)
+#     months = {
+#         1: 31,
+#         2: 29 if is_leap(year) else 28,
+#         3: 31, 4: 30, 5: 31, 6: 30, 7: 31,
+#         8: 31, 9: 30, 10: 31, 11: 30, 12: 31,
+#     }
+#     return year > 0 and month in months and 1 <= day <= months[month]
+
+# print(date_check('30.02.2023'))
+
+
+##### Задача 3 #####
+
+# from math import sqrt
+
+# def prime(num: int) -> bool:
+#     if num == 2:
+#         return True
+#     if num in (0, 1) and not num % 2:
+#         return False
+#     for dev in range(3, int(sqrt(num)) + 1):
+#         if not num % dev:
+#             return False
+#     return True
+
+
+# print(prime(23))
