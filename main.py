@@ -305,3 +305,20 @@
 
 
 # print(prime(23))
+
+
+users_data = dict()
+while data := input().split():
+    name, surname, age, identificator = data
+    if name.isalpha() == True and surname.isalpha() == True and 18 < int(age) < 60:
+        value = name.capitalize(), surname.capitalize(), age
+        users_data.setdefault(identificator.zfill(8), value)
+    else:
+        print("Ошибка, введены некорректные данные")
+for key in users_data:
+    print(key)
+    # for name in users_data[keys]:
+    #     print(name, surname, age)
+
+# print(users_data.keys())
+
