@@ -204,49 +204,23 @@
 
 ##### Задача 5 #####
 
-# # input_str = str()
-# # subject = list(input_str.split()[0])
-# # # input_str != ''
-# # i = 1
-# # print(subject, surname, rating)
-# report_card = dict()
-# while input_str := input():
-#     subject = input_str.split()[0]
-#     surname = input_str.split()[1]
-#     rating = input_str.split()[2]
-#     if subject in report_card:
-#         if surname in report_card[subject]:
-#             report_card[subject][surname].append[rating]
-#         else:
-#             report_card[subject][surname] = [rating]
-#     else:
-#         report_card[subject] = {surname: [rating]}
-# for subject in report_card.items():
-#     print(subject)
-#     for surname, rating in student.items():
-#         print(surname, rating)
-#     # report_card[i] = subject, surname, rating
-#     # i += 1
-# # print(report_card)
-
-
-# dict_data = {}
+# report_card = {}
 # while data := input().split():
-#     subj, name, mark = data
-#     if subj in dict_data:
-#         if name in dict_data[subj]:
-#             dict_data[subj][name].append(mark)
-#         else:
-#             dict_data[subj][name] = [mark]
-#     else:
-#         dict_data[subj] = {name: [mark]}
-#     print(data)
-# for subj, student in dict_data.items():
-#     print(subj)
-#     for name, marks in student.items():
-#         print(name, marks)
+#     subject, surname, mark = data
+#     if subject not in report_card:
+#         report_card[subject] = {}
+#     if surname not in report_card[subject]:
+#         report_card[subject][surname] = []
 #
-# print(dict_data)
+#     report_card[subject][surname].append(mark)
+#
+# for subject, surnames in report_card.items():
+#     print(subject)
+#     print(f'{"Фамилия":<15} {"Оценки"}')
+#     for surname, marks in surnames.items():
+#         print(f'{surname:<16}{' '.join(marks)}')
+
+
 
 
 ##### ДЗ 3 #####
@@ -307,18 +281,25 @@
 # print(prime(23))
 
 
-users_data = dict()
-while data := input().split():
-    name, surname, age, identificator = data
-    if name.isalpha() == True and surname.isalpha() == True and 18 < int(age) < 60:
-        value = name.capitalize(), surname.capitalize(), age
-        users_data.setdefault(identificator.zfill(8), value)
-    else:
-        print("Ошибка, введены некорректные данные")
-for key in users_data:
-    print(key)
-    # for name in users_data[keys]:
-    #     print(name, surname, age)
+##### Задача 4 #####
 
-# print(users_data.keys())
-
+# def data_card():
+#     users_data = dict()
+#     while data := input().split():
+#         name, surname, age, identificator = data
+#         if name.isalpha() == True and surname.isalpha() == True and 18 < int(age) < 60:
+#             value = name.capitalize(), surname.capitalize(), age
+#             users_data.setdefault(identificator.zfill(8), value)
+#             print('Добавлено')
+#         else:
+#             print("Ошибка, введены некорректные данные")
+#     # print(users_data)
+#     return users_data
+# def table_output(users_data: object) -> object:
+#     print('ID        | Имя      | Фамилия  | Возраст')
+#     print('_________________________________________')
+#     for key in users_data.keys():
+#         print(f'{key: <10} {users_data[key][0]: <10} {users_data[key][1]: <10} {users_data[key][2]: <10}')
+#
+#
+# table_output(data_card())
